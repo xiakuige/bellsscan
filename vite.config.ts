@@ -9,7 +9,6 @@ const resolve = (p: string) => {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    // base: '/bellsscan/', // github仓库名称
     resolve: {
         alias: {
             '@': resolve('./src')

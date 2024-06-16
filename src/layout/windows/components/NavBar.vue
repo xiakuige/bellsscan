@@ -7,6 +7,11 @@
           <p>Home</p>
         </div>
       </div>
+      <div class="navlist">
+        <div class="navitem">
+          <p>Donate</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -259,3 +264,5 @@
 }
 </style>
 
+<script setup lang="ts">
+</script>
