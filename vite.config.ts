@@ -14,5 +14,8 @@ export default defineConfig({
             '@': resolve('./src')
         }
     },
-    plugins: [vue()]
+    plugins: [vue()],
+    build: {
+        outDir: "docs"
+    }
 })

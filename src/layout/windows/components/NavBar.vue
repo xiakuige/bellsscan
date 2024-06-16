@@ -4,14 +4,13 @@
     <div class="navs">
       <div class="navlist">
         <div class="navitem">
-          <p @click="toIndex">Home</p>
+          <p>Home</p>
         </div>
       </div>
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
-@import "@/assets/styles/variables.module.scss";
 
 .an3 {
   transition: 0.3s;
@@ -120,7 +119,6 @@
   position: fixed;
   width: 100%;
   z-index: 99;
-  background: v-bind('props.bgColor');
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
@@ -145,7 +143,6 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        color: v-bind('props.txtColor');
         padding: 0 15px !important;
         letter-spacing: 3px;
         font-size: 18px;
@@ -160,7 +157,6 @@
 
       .el-sub-menu {
         height: 100%;
-        color: v-bind('props.txtColor');
         border-bottom: 4px solid transparent;
 
         &:hover {
@@ -171,7 +167,6 @@
         :deep(.el-sub-menu__title) {
           letter-spacing: 3px;
           font-size: 18px;
-          color: v-bind('props.fontColor');
           border: none;
 
           &:hover {
@@ -215,8 +210,6 @@
         align-items: center;
         justify-content: center;
         font-size: 20px;
-        color: v-bind('nameColor');
-        background-color: v-bind('iconColor');
       }
     }
   }
