@@ -3,57 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BellsScan - Coming Soon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000; /* 可以调整背景色，但根据您提供的图片，这里用了一个淡灰色 */
-            text-align: center;
-            padding-top: 100px; /* 调整内容距离顶部的距离 */
-        }
-
-        .app-container {
-            margin-top: 120px;
-        }
-
-        .coming-soon {
-            font-size: 36px;
-            font-weight: bold;
-            color: #333; /* 根据图片，使用了深色文字 */
-            text-shadow: 2px 2px #fff; /* 添加一点文字阴影以增强效果 */
-        }
-
-        .product-name {
-            font-size: 80px;
-            color: #fff; /* 强调产品名称，使用黑色 */
-            margin-bottom: 20px;
-        }
-
-        .address {
-            margin-top: 50px;
-        }
-
-        @keyframes blink-caret {
-            from, to {
-                border-color: transparent
-            }
-            50% {
-                border-color: #333
-            }
-        }
-    </style>
-
+    <title>Bells Block Explorer</title>
 </head>
 <body>
-<div class="app-container">
-    <div class="product-name">Bells</div>
-    <div class="coming-soon">The First Ancient Meme Coin</div>
-    <div class="address">
-        <img src="imgs/wallet.png">
-    </div>
-    <p style="color: white">
-        BD2Mq3XQfSp1yNQEzTm87EnmpyLQjEa2t8
-    </p>
-</div>
+<div id="app"></div>
+<!-- vite时基于esModule的 -->
+<script src="./src/main.ts" type="module"></script>
 </body>
 </html>
