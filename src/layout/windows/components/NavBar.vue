@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="navbar">
     <Logo/>
     <div class="navs">
       <div class="navlist">
@@ -15,24 +15,25 @@
     </div>
   </div>
 </template>
+<script setup lang="ts">
+import Logo from '@/components/Logo/index.vue'
+</script>
 <style lang="scss" scoped>
 
 .an3 {
   transition: 0.3s;
 }
 
-.header {
+.navbar {
+  padding: 0 70px;
+  min-width: 1000px;
+  max-width: 1440px;
   height: 65px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
   align-items: center;
-  background: white;
-  position: fixed;
-  z-index: 100;
+  margin: auto;
   border-bottom: 1px solid #E6EAF0;
-  min-width: 900px;
 
   .logo {
     height: 33px;
@@ -264,5 +265,3 @@
 }
 </style>
 
-<script setup lang="ts">
-</script>

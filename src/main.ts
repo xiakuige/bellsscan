@@ -1,5 +1,6 @@
 import {createApp} from 'vue'
 import './style.css'
+import '@/assets/styles/index.scss'
 import App from './App.vue'
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/reset.css'

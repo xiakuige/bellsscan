@@ -1,15 +1,14 @@
 <template>
   <div class="logo" @click="toHome">
-    <el-image class="logo-image" :src="logo"/>
+    <a-image width="40px" class="logo-image" :src="logo"/>
     <span class="title">
-      {{ title }}
+      {{ settingConfig.title }}
     </span>
   </div>
 </template>
 <script setup>
 import logo from '@/assets/logo/logo.png'
-import {title} from '@/config/setting.config'
-import {scrollTo} from '@/utils/scroll-to'
+import {settingConfig} from '@/config/setting.config.ts'
 import {useRouter} from 'vue-router'
 
 const router = useRouter()
@@ -29,7 +28,6 @@ const toHome = () => {
   cursor: pointer;
 
   .logo-image {
-    width: 40px;
     line-height: 100%;
     border-radius: 50%;
     vertical-align: middle;
@@ -38,7 +36,7 @@ const toHome = () => {
   .title {
     margin-left: 10px;
     font-size: 22px;
-    background: linear-gradient(to right, #FE770B, #FA2601, #FE770B);
+    background: linear-gradient(to right, #fea90b, #fab301, #fed60b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
