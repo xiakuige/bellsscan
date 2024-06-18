@@ -29,9 +29,6 @@ import NavBar from './components/NavBar.vue';
     padding-top: 64px;
     min-height: 90vh;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 </style>

@@ -4,12 +4,12 @@
     <div class="navs">
       <div class="navlist">
         <div class="navitem">
-          <p>Home</p>
+          <p @click="doMenu('home')">Home</p>
         </div>
       </div>
       <div class="navlist">
         <div class="navitem">
-          <p>Donate</p>
+          <p @click="doMenu('donate')">Donate</p>
         </div>
       </div>
     </div>
@@ -17,6 +17,16 @@
 </template>
 <script setup lang="ts">
 import Logo from '@/components/Logo/index.vue'
+import {useRouter} from "vue-router";
+
+
+const router = useRouter();
+const doMenu = (key: 'donate' | 'home') => {
+  router.push({
+    name: key
+  });
+}
+
 </script>
 <style lang="scss" scoped>
 
@@ -33,7 +43,6 @@ import Logo from '@/components/Logo/index.vue'
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  border-bottom: 1px solid #E6EAF0;
 
   .logo {
     height: 33px;

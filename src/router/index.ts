@@ -8,8 +8,18 @@ export const constantRoutes = [
         children: [
             {
                 path: '/',
-                name: 'index',
-                component: () => import('@/views/index.vue')
+                name: 'home',
+                component: () => import('@/views/home/index.vue')
+            },
+            {
+                path: 'home',
+                name: 'home',
+                component: () => import('@/views/home/index.vue')
+            },
+            {
+                path: 'donate',
+                name: 'donate',
+                component: () => import('@/views/donate/index.vue')
             }
         ]
     }

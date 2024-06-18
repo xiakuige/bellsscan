@@ -1,5 +1,5 @@
 <template>
-  <div class="w-cnt">
+  <div class="container">
     <div class="product">
       <div class="title">BellsScan</div>
       <div class="remark">Coming Soon!</div>
@@ -16,7 +16,7 @@
 import wallet from '@/assets/imgs/wallet.png'
 </script>
 <style lang="scss">
-.w-cnt {
+.container {
   padding: 0 70px;
   min-width: 1000px;
   max-width: 1440px;
